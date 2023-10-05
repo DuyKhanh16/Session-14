@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+           let number=[]
+        let trungBinh=0
+        let b=0
+        for (let i = 0; i < 10; i++) {
+         let a=+prompt('moi nhap so trong mang la so nguyen duong')
+         if (a<0||a%1!=0) {
+            while (a<0||a%1!=0) {
+                a=+prompt('moi nhap lai so la so nguyen duong')
+            }
+         }
+         number[i]=a
+        b += a
+        }
+        trungBinh=b/number.length
+        console.log(number);
+        let max=Math.max.apply(Math,number);
+        console.log(`${max} là số lớn nhất`);
+        console.log(`${trungBinh} là trung bình`);
+    </script>
+</body>
+</html>

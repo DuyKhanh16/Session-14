@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numberA=[]
+        let numberB=[]
+        for (let i = 0; i < 10; i++) {
+         let a=+prompt('Mời nhập số nguyên dương mảng A')
+        //  console.log(a);
+         if (a<0||a%1!=0) {
+            while (a<0||a%1!=0) {
+                a=+prompt('Nhập lại số nguyên dương mảng A')
+            }
+         }
+         numberA[i]=a
+        }
+        for (let i = 0; i < 10; i++) {
+         let a=+prompt('mời nhập số nguyên dương mảng B')
+        //  console.log(a);
+         if (a<0||a%1!=0) {
+            while (a<0||a%1!=0) {
+                a=+prompt('Nhập lại sô nguyên dương mảng B')
+            }
+         }
+         numberB[i]=a
+        }
+        console.log(numberA);
+        console.log(numberB);
+        let numberC=numberA.concat(numberB)
+        document.write(numberC)
+    </script>
+</body>
+</html>

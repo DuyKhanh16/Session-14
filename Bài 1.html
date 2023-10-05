@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number=[]
+        
+        for (let i = 0; i < 3; i++) {
+         let a=+prompt('moi nhap so trong mang la so nguyen duong')
+        //  console.log(a);
+         if (a<0||a%1!=0) {
+            while (a<0||a%1!=0) {
+                a=+prompt('moi nhap lai so la so nguyen duong')
+            }
+         }
+         number[i]=a
+         if (number) {
+            a=+prompt(`moi nhap lai so la so nguyen duong khác ${number[i]}`)
+         }
+        
+        //  if (a-10>=0) {
+        //     document.write(`${a} <br>`)
+        //  }
+        }
+        console.log(number);
+
+        
+        
+    </script>
+</body>
+</html>

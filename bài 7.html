@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let number=[]
+        
+        for (let i = 0; i < 10; i++) {
+         let a=+prompt('moi nhap so trong mang la so nguyen duong')
+         if (a<0||a%1!=0) {
+            while (a<0||a%1!=0) {
+                a=+prompt('moi nhap lai so la so nguyen duong')
+            }
+         }
+         number[i]=a
+        }
+        console.log(number);
+        let x=+prompt("Nhập một số để tra")
+        console.log(x);
+        if (number.indexOf(x)==-1) {
+            alert(`${x} không nằm trong chuỗi number`)
+        } else {
+            let sTT=number.indexOf(x)
+            console.log(sTT);
+            number.splice(sTT-1,1)
+            document.write(number)
+        }
+    </script>
+</body>
+</html>
